@@ -723,7 +723,7 @@ class BootstrapTable {
             const props = key.split('.')
             for (let i = 0; i < props.length; i++) {
               if (value[props[i]] !== null) {
-                value = value[props[i]]
+                value = value[props[i]] || '';
               }
             }
           } else {
